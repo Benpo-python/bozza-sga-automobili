@@ -1,0 +1,817 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>S.G.A. Automobili — Noleggio auto, furgoni e pulmini 9 posti, usato e officina a Bergamo</title>
+<meta name="description" content="S.G.A. Automobili, a Bergamo dal 1975: noleggio di oltre 100 auto, furgoni e pulmini 9 posti a giornata, settimana o mese; auto usate di ogni marca; officina su tutte le marche, gommista con deposito pneumatici e gestione della carrozzeria. Via Fratelli Bandiera 45.">
+<meta name="theme-color" content="#14181D">
+<link rel="preload" href="fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/Inter-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":["AutoDealer","AutoRepair","AutoRental"],"name":"S.G.A. Automobili","legalName":"Società Gestione Autosaloni Srl","foundingDate":"1975","description":"Noleggio auto, furgoni e pulmini 9 posti, vendita di auto usate di ogni marca, officina su tutte le marche, gommista con deposito pneumatici e gestione della carrozzeria a Bergamo.","address":{"@type":"PostalAddress","streetAddress":"Via Fratelli Bandiera 45","addressLocality":"Bergamo","postalCode":"24127","addressRegion":"BG","addressCountry":"IT"},"geo":{"@type":"GeoCoordinates","latitude":45.672985,"longitude":9.6367158},"telephone":"+39 035 259898","email":"sgabergamo@gmail.com","vatID":"IT02164700169","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"89"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"12:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"14:00","closes":"19:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:00","closes":"12:00"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Per quanto tempo posso noleggiare un mezzo?","acceptedAnswer":{"@type":"Answer","text":"A giornata, a settimana o a mese. Scriveteci le date e il mezzo che vi serve: vi diciamo subito se è disponibile."}},
+{"@type":"Question","name":"Che mezzi avete a noleggio?","acceptedAnswer":{"@type":"Answer","text":"Oltre 100 auto di ogni fascia, 10 furgoni e 10 pulmini da 9 posti."}},
+{"@type":"Question","name":"Le auto usate in vendita sono online?","acceptedAnswer":{"@type":"Answer","text":"Le auto disponibili cambiano spesso: diteci cosa cercate e quanto volete spendere, vi mandiamo le proposte su WhatsApp."}},
+{"@type":"Question","name":"Riparate tutte le marche?","acceptedAnswer":{"@type":"Answer","text":"Sì, l'officina lavora su tutte le marche."}},
+{"@type":"Question","name":"Fate la carrozzeria?","acceptedAnswer":{"@type":"Answer","text":"Non la facciamo direttamente, ma seguiamo noi il ripristino: portate l'auto da noi e pensiamo a tutto fino alla riconsegna."}}]}
+</script>
+<script>document.documentElement.className="js"</script>
+<style>
+@font-face{font-family:"Newsreader";src:url(fonts/newsreader.woff2) format("woff2");font-weight:450;font-style:normal;font-display:swap}
+@font-face{font-family:"Newsreader";src:url(fonts/newsreader-italic.woff2) format("woff2");font-weight:450;font-style:italic;font-display:swap}
+@font-face{font-family:"Inter";src:url(fonts/Inter-var.woff2) format("woff2");font-weight:400 600;font-style:normal;font-display:swap}
+
+/* palette: asfalto del piazzale, carta bianca, blu officina, rosso e giallo della segnaletica */
+:root{
+  --carta:#F3F2EE;--carta-2:#E6E4DE;--ink:#16191D;--mut:#5A5F66;--linea:rgba(22,25,29,.14);
+  --blu:#1E3A5F;--blu-d:#152B47;--rosso:#B8352B;--giallo:#F2B33D;--giallo-c:#F7D488;--notte:#14181D;
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;--sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --pad:clamp(20px,5vw,56px);--sez:clamp(76px,10vw,140px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:84px}
+body{font-family:var(--sans);font-size:16.5px;line-height:1.62;color:var(--ink);background:var(--carta);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+svg{display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:450;line-height:1.06;letter-spacing:-.018em}
+h2{font-size:clamp(2.2rem,1.4rem + 3.2vw,3.9rem);max-width:16ch}
+h2 em,h1 em{font-style:italic;color:var(--rosso)}
+.scuro h2 em{color:var(--giallo-c)}
+:focus-visible{outline:3px solid var(--blu);outline-offset:3px}
+.scuro :focus-visible,.hero :focus-visible{outline-color:var(--giallo-c)}
+.wrap{max-width:1240px;margin:0 auto;padding:0 var(--pad)}
+.salta{position:absolute;left:12px;top:-60px;background:var(--blu);color:#fff;padding:12px 18px;z-index:50}
+.salta:focus{top:12px}
+.sez{padding:var(--sez) 0}
+.occhiello{font:600 11.5px/1.3 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--rosso);display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.occhiello::before{content:"";width:30px;height:1px;background:currentColor;flex:none;opacity:.7}
+.scuro .occhiello{color:var(--giallo-c)}
+.intro{font-size:clamp(1.04rem,.98rem + .3vw,1.2rem);color:var(--mut);max-width:34em;margin-top:18px}
+.scuro .intro{color:rgba(243,242,238,.78)}
+
+/* pulsanti */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:52px;padding:0 26px;border:1px solid var(--blu);background:var(--blu);color:#fff;font:600 14px/1.2 var(--sans);letter-spacing:.02em;text-decoration:none;border-radius:999px;cursor:pointer;transition:background .25s,color .25s,border-color .25s,transform .25s}
+.btn:hover{background:var(--blu-d);border-color:var(--blu-d)}
+.btn:active{transform:translateY(1px)}
+.btn.caldo{background:var(--giallo);border-color:var(--giallo);color:var(--notte)}
+.btn.caldo:hover{background:var(--giallo-c);border-color:var(--giallo-c)}
+.btn.vetro{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.55);color:#fff;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.btn.vetro:hover{background:rgba(255,255,255,.2);border-color:#fff}
+.btn.vuoto{background:transparent;color:var(--ink);border-color:rgba(22,25,29,.35)}
+.btn.vuoto:hover{border-color:var(--ink);background:rgba(22,25,29,.04)}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* fascia bozza */
+.bnw-fascia{background:#0B0D10;color:#fff;font:400 13.5px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;padding:9px 16px}
+.bnw-fascia a{color:#fff;font-weight:600;text-decoration:underline;text-underline-offset:2px;display:inline-block;padding:12px 4px;margin:-12px 0}
+.bnw-fascia small{display:block;opacity:.7;font-size:12px;margin-top:2px}
+
+/* barra */
+.barra{position:sticky;top:0;z-index:30;background:rgba(243,242,238,.93);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--linea)}
+.barra .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:70px}
+.logo{text-decoration:none;display:flex;align-items:center;gap:12px;min-height:44px}
+.logo svg{width:40px;height:40px;color:var(--blu);flex:none}
+.logo b{font-family:var(--serif);font-weight:450;font-size:1.45rem;letter-spacing:-.01em;line-height:1;display:block}
+.logo small{font:600 9.5px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--mut);display:block;margin-top:5px}
+.menu{display:none;gap:28px;list-style:none}
+.menu a{font-size:.93rem;text-decoration:none;display:inline-flex;align-items:center;min-height:44px;position:relative}
+.menu a::after{content:"";position:absolute;left:0;right:0;bottom:9px;height:1px;background:var(--rosso);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.menu a:hover::after{transform:scaleX(1)}
+.barra .btn{min-height:44px;padding:0 20px;font-size:13.5px}
+
+/* hero */
+.hero{position:relative;min-height:calc(100svh - 108px);display:flex;align-items:flex-end;color:#fff;background:var(--notte);overflow:hidden}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero picture img{object-position:50% 55%;transform:scale(1.04);animation:respiro 18s ease-out forwards}
+@keyframes respiro{to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,15,19,.35) 0,rgba(12,15,19,.3) 30%,rgba(12,15,19,.9) 100%),linear-gradient(90deg,rgba(12,15,19,.7) 0,rgba(12,15,19,0) 72%)}
+.hero .wrap{position:relative;z-index:1;width:100%;padding-top:120px;padding-bottom:clamp(36px,6vw,72px)}
+.hero .occhiello{color:var(--giallo-c)}
+.hero h1{font-size:clamp(2.9rem,1.2rem + 6.4vw,6.4rem);line-height:.98;letter-spacing:-.028em;max-width:12ch}
+.hero h1 em{color:var(--giallo-c)}
+.hero .sotto{font-size:clamp(1.05rem,.98rem + .35vw,1.25rem);color:rgba(255,255,255,.88);max-width:33em;margin-top:20px}
+.azioni{display:flex;flex-wrap:wrap;gap:10px 12px;margin-top:28px}
+.stato{display:inline-flex;align-items:center;gap:10px;margin-top:26px;font-size:.93rem;color:rgba(255,255,255,.88);background:rgba(12,15,19,.5);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.16);padding:9px 16px 9px 13px;border-radius:999px}
+.punto{width:9px;height:9px;border-radius:50%;background:#9aa0a6;flex:none}
+.stato.aperto .punto{background:#6fd08c;box-shadow:0 0 0 0 rgba(111,208,140,.6);animation:pulsa 2.2s infinite}
+.stato.chiuso .punto{background:#e0866f}
+@keyframes pulsa{70%{box-shadow:0 0 0 9px rgba(111,208,140,0)}100%{box-shadow:0 0 0 0 rgba(111,208,140,0)}}
+.stato b{color:#fff;font-weight:600}
+
+/* punti di forza */
+.valori{border-bottom:1px solid var(--linea)}
+.valori ul{list-style:none;display:grid}
+.valori li{display:flex;gap:16px;align-items:flex-start;padding:24px 0}
+.valori li+li{border-top:1px solid var(--linea)}
+.valori svg{width:34px;height:34px;color:var(--rosso);flex:none;margin-top:2px}
+.valori b{font-family:var(--serif);font-weight:450;font-size:1.28rem;display:block;line-height:1.2}
+.valori span{color:var(--mut);font-size:.95rem}
+
+/* noleggio */
+.nol{background:var(--carta-2)}
+.durate{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.durate button{font:500 14.5px/1 var(--sans);min-height:44px;padding:0 18px;border-radius:999px;border:1px solid rgba(22,25,29,.25);background:#fff;color:var(--ink);cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.durate button[aria-pressed="true"]{background:var(--notte);color:#fff;border-color:var(--notte)}
+.durate-n{font-size:.9rem;color:var(--mut);margin-top:12px;min-height:1.5em}
+.mezzi{display:grid;gap:14px;margin-top:clamp(28px,4vw,44px)}
+.mezzo{background:#fff;border-radius:8px;overflow:hidden;display:flex;flex-direction:column;border:1px solid var(--linea)}
+.mezzo figure{position:relative;aspect-ratio:16/10;background:var(--carta-2);overflow:hidden}
+.mezzo figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.mezzo .num{position:absolute;left:12px;top:12px;background:var(--notte);color:#fff;font:600 12px/1 var(--sans);letter-spacing:.06em;padding:8px 12px;border-radius:999px}
+.mezzo .corpo{padding:22px 22px 24px;display:flex;flex-direction:column;gap:10px;flex:1}
+.mezzo h3{font-size:1.7rem;line-height:1.1}
+.mezzo p{color:var(--mut);font-size:.97rem}
+.mezzo ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.mezzo ul li{font-size:.82rem;background:var(--carta);border:1px solid var(--linea);border-radius:999px;padding:5px 11px}
+.mezzo .btn{margin-top:auto;align-self:flex-start}
+.mezzo .corpo>.btn{margin-top:14px}
+
+/* servizi a schede */
+.schede{display:flex;gap:6px;overflow-x:auto;margin:clamp(34px,5vw,54px) calc(var(--pad)*-1) 0;padding:0 var(--pad) 2px;scrollbar-width:none;border-bottom:1px solid var(--linea)}
+.schede::-webkit-scrollbar{display:none}
+.schede button{flex:none;font:500 15px/1 var(--sans);color:var(--mut);background:none;border:0;border-bottom:2px solid transparent;padding:0 14px;min-height:52px;cursor:pointer;margin-bottom:-1px;transition:color .2s,border-color .2s}
+.schede button:hover{color:var(--ink)}
+.schede button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--rosso);font-weight:600}
+.pannello{padding-top:clamp(28px,4vw,44px)}
+.pannello[hidden]{display:none}
+.pan{display:grid;gap:clamp(28px,5vw,64px);align-items:start}
+.pan h3{font-size:clamp(1.7rem,1.3rem + 1.4vw,2.3rem);line-height:1.1}
+.pan .desc{color:var(--mut);margin-top:12px;max-width:34em;font-size:1.02rem}
+.voci{list-style:none;margin-top:22px;border-top:1px dashed rgba(22,25,29,.22)}
+.voci li{display:flex;gap:12px;padding:12px 0;border-bottom:1px dashed rgba(22,25,29,.22);font-size:.98rem}
+.voci svg{width:18px;height:18px;color:var(--rosso);flex:none;margin-top:3px}
+.cosa{background:#fff;border:1px solid var(--linea);border-left:4px solid var(--giallo);border-radius:6px;padding:20px 22px;margin-top:24px}
+.cosa small{font:600 11px/1.2 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--rosso);display:block}
+.cosa ol{margin:12px 0 0 1.2em;display:grid;gap:6px;font-size:.96rem}
+.cosa a{display:inline-flex;align-items:center;gap:8px;margin-top:14px;font-weight:600;font-size:.94rem;color:var(--blu);min-height:44px}
+.media{position:relative;border-radius:6px;overflow:hidden;background:var(--carta-2)}
+.media img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.media figcaption{position:absolute;left:10px;bottom:10px;background:rgba(243,242,238,.94);font-size:.8rem;font-weight:500;padding:5px 11px;border-radius:999px}
+
+/* gomme */
+.gomme{display:grid;gap:clamp(28px,5vw,64px);align-items:center}
+.stagione{background:var(--notte);color:var(--carta);border-radius:8px;padding:clamp(22px,4vw,34px);position:relative;overflow:hidden}
+.stagione small{font:600 11px/1.2 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--giallo-c);display:block}
+.stagione b{font-family:var(--serif);font-weight:450;font-size:clamp(1.6rem,1.2rem + 1.4vw,2.3rem);line-height:1.12;display:block;margin-top:10px}
+.stagione p{color:rgba(243,242,238,.75);margin-top:10px;font-size:.96rem}
+.calend{display:grid;grid-template-columns:repeat(12,1fr);gap:3px;margin-top:22px}
+.calend span{height:30px;border-radius:3px;background:rgba(243,242,238,.1);position:relative}
+.calend span.inv{background:rgba(120,170,230,.45)}
+.calend span.cambio{background:var(--giallo)}
+.calend span.ora{outline:2px solid #fff;outline-offset:2px}
+.calend-l{display:grid;grid-template-columns:repeat(12,1fr);gap:3px;margin-top:6px;font-size:.68rem;color:rgba(243,242,238,.55);text-align:center}
+.legenda{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:14px;font-size:.8rem;color:rgba(243,242,238,.7)}
+.legenda i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.stagione .btn{margin-top:22px}
+
+/* storia */
+.storia .wrap{display:grid;gap:clamp(36px,6vw,80px);align-items:center}
+.storia p.testo{font-size:clamp(1.08rem,1rem + .35vw,1.28rem);max-width:32em;margin-top:22px}
+.storia p.testo+p.testo{margin-top:14px;color:var(--mut);font-size:1.02rem}
+.numeri{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:34px;border-top:1px solid var(--linea);padding-top:24px}
+.numeri b{font-family:var(--serif);font-weight:450;font-size:clamp(2.2rem,1.6rem + 2.2vw,3.4rem);line-height:1;display:block;color:var(--blu)}
+.numeri span{font-size:.86rem;color:var(--mut);display:block;margin-top:8px}
+.storia figure{border-radius:6px;overflow:hidden;position:relative}
+.storia figure img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.storia figcaption{position:absolute;left:10px;bottom:10px;background:rgba(243,242,238,.94);font-size:.8rem;font-weight:500;padding:5px 11px;border-radius:999px}
+
+/* galleria */
+.galleria{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:clamp(34px,5vw,54px)}
+.galleria figure{position:relative;overflow:hidden;border-radius:4px;background:var(--carta-2)}
+.galleria img{width:100%;height:100%;object-fit:cover;aspect-ratio:1;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.galleria figure:hover img{transform:scale(1.04)}
+.galleria figure:first-child{grid-column:span 2}
+.galleria figure:first-child img{aspect-ratio:4/3}
+.galleria figcaption{position:absolute;left:10px;bottom:10px;background:rgba(243,242,238,.94);font-size:.78rem;font-weight:500;padding:5px 10px;border-radius:999px}
+.nota{font-size:.86rem;color:var(--mut);margin-top:14px}
+
+/* recensioni */
+.rec{background:var(--carta-2)}
+.rec .wrap{display:grid;gap:clamp(30px,5vw,64px)}
+.voto b{font-family:var(--serif);font-weight:450;font-size:clamp(4.5rem,3rem + 6vw,8rem);line-height:.9;display:block;color:var(--blu)}
+.stelle{display:flex;gap:4px;margin-top:12px;color:var(--giallo)}
+.stelle svg{width:22px;height:22px}
+.voto p{color:var(--mut);margin-top:10px}
+.voto a{color:var(--blu);font-weight:600;display:inline-flex;min-height:44px;align-items:center}
+.cit{display:grid;gap:12px}
+.cit blockquote{background:#fff;border-radius:8px;padding:24px 26px;border:1px solid var(--linea)}
+.cit blockquote p{font-family:var(--serif);font-size:1.28rem;line-height:1.35}
+.cit footer{font-size:.86rem;color:var(--mut);margin-top:14px}
+.cit footer b{color:var(--ink);font-weight:600}
+
+/* zona e orari */
+.dove .wrap{display:grid;gap:clamp(36px,6vw,80px)}
+.orari{list-style:none;margin-top:28px;border-top:1px solid var(--linea)}
+.orari li{display:flex;justify-content:space-between;gap:16px;padding:14px 10px;border-bottom:1px solid var(--linea);font-size:.98rem}
+.orari li span:last-child{color:var(--mut);text-align:right}
+.orari li.oggi-r{background:rgba(242,179,61,.22);border-radius:4px;font-weight:600}
+.orari li.oggi-r span:last-child{color:var(--ink)}
+.orari li.oggi-r span:first-child::after{content:"oggi";font:600 10px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;background:var(--blu);color:#fff;padding:3px 6px;border-radius:3px;margin-left:10px;vertical-align:2px}
+.mappa{position:relative;background:var(--notte);color:var(--carta);border-radius:8px;overflow:hidden;min-height:380px;display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(22px,4vw,34px)}
+.mappa>svg{position:absolute;inset:0;width:100%;height:100%;opacity:.55}
+.mappa .box{position:relative}
+.mappa address{font-style:normal;font-family:var(--serif);font-size:1.6rem;line-height:1.2}
+.mappa p{font-size:.92rem;color:rgba(243,242,238,.72);margin:8px 0 18px;max-width:30em}
+.mappa iframe{position:absolute;inset:0;width:100%;height:100%;border:0;z-index:3}
+.come{list-style:none;display:grid;gap:10px;margin-top:24px}
+.come li{display:flex;gap:14px;font-size:.96rem}
+.come svg{width:22px;height:22px;color:var(--rosso);flex:none;margin-top:2px}
+
+/* domande */
+.faq{border-top:1px solid var(--linea)}
+.faq .wrap{display:grid;gap:clamp(28px,5vw,64px)}
+.domande details{border-bottom:1px solid var(--linea)}
+.domande details:first-child{border-top:1px solid var(--linea)}
+.domande summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:64px;padding:12px 0;font-family:var(--serif);font-size:1.3rem;line-height:1.25}
+.domande summary::-webkit-details-marker{display:none}
+.domande summary::after{content:"+";font:300 1.6rem/1 var(--sans);color:var(--rosso);flex:none;transition:transform .25s}
+.domande details[open] summary::after{transform:rotate(45deg)}
+.domande p{color:var(--mut);padding:0 0 20px;max-width:40em}
+
+/* richiesta */
+.prev{background:var(--notte);color:var(--carta);position:relative;overflow:hidden}
+.prev .wrap{display:grid;gap:clamp(36px,6vw,80px);position:relative}
+.prev-foto{position:absolute;inset:0;opacity:.13}
+.prev-foto img{width:100%;height:100%;object-fit:cover;filter:grayscale(.5)}
+.prev .contatti{list-style:none;margin-top:30px;display:grid;gap:4px}
+.prev .contatti a{display:flex;align-items:center;gap:14px;min-height:56px;text-decoration:none;font-size:1.15rem}
+.prev .contatti svg{width:22px;height:22px;color:var(--giallo-c);flex:none}
+.prev .contatti small{display:block;font-size:.82rem;color:rgba(243,242,238,.6)}
+.prev .contatti a:hover span{text-decoration:underline;text-underline-offset:3px}
+form.modulo{background:var(--carta);color:var(--ink);border-radius:8px;padding:clamp(22px,4vw,36px);box-shadow:0 40px 80px -40px rgba(0,0,0,.6)}
+.modulo h3{font-size:1.7rem}
+.modulo .sotto-t{color:var(--mut);font-size:.94rem;margin-top:6px}
+.modulo .campi{display:grid;grid-template-columns:1fr 1fr;gap:16px 14px;margin-top:20px}
+.campo{display:flex;flex-direction:column;gap:6px;min-width:0}
+.campo.largo{grid-column:1/-1}
+.campo[hidden]{display:none}
+.campo label,.campo legend{font:600 12px/1.2 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--mut)}
+.campo input,.campo select,.campo textarea{font:400 16px/1.3 var(--sans);color:var(--ink);background:#fff;border:1px solid rgba(22,25,29,.22);border-radius:6px;min-height:50px;padding:12px 14px;width:100%;-webkit-appearance:none;appearance:none}
+.campo textarea{min-height:84px;resize:vertical}
+.campo input:focus,.campo textarea:focus{outline:2px solid var(--blu);outline-offset:0;border-color:var(--blu)}
+.scelte-f{border:0;min-width:0}
+.scelte-f legend{margin-bottom:8px;padding:0}
+.scelte{display:flex;gap:6px;flex-wrap:wrap}
+.campo .scelte label{position:relative;text-transform:none;letter-spacing:normal;color:var(--ink)}
+.scelte input{position:absolute;opacity:0;width:1px;height:1px}
+.scelte span{display:grid;place-items:center;min-height:44px;padding:0 13px;border:1px solid rgba(22,25,29,.22);border-radius:6px;background:#fff;font:500 14.5px/1.2 var(--sans);cursor:pointer;transition:background .2s,color .2s,border-color .2s;text-align:center}
+.scelte input:checked+span{background:var(--blu);color:#fff;border-color:var(--blu)}
+.scelte input:focus-visible+span{outline:3px solid var(--rosso);outline-offset:2px}
+.modulo .btn{width:100%;margin-top:22px;background:#1f8f55;border-color:#1f8f55}
+.modulo .btn:hover{background:#18744a;border-color:#18744a}
+.modulo .info{font-size:.84rem;color:var(--mut);margin-top:12px;text-align:center}
+.errore{color:#a23a22;font-size:.88rem;margin-top:12px;text-align:center;min-height:1.2em}
+
+/* piede */
+.piede{background:var(--notte);color:rgba(243,242,238,.75);padding:clamp(54px,7vw,84px) 0 calc(36px + env(safe-area-inset-bottom));font-size:.92rem;border-top:1px solid rgba(243,242,238,.08)}
+.piede .wrap{display:grid;gap:34px}
+.piede .logo{color:var(--carta)}
+.piede .logo svg{color:var(--giallo-c)}
+.piede .logo small{color:rgba(243,242,238,.55)}
+.piede h3{font:600 11px/1.2 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--giallo-c);margin-bottom:12px}
+.piede ul{list-style:none;display:grid;gap:2px}
+.piede ul a{text-decoration:none;display:inline-flex;min-height:36px;align-items:center}
+.piede ul a:hover{color:#fff}
+.fine{border-top:1px solid rgba(243,242,238,.14);padding-top:22px;font-size:.8rem;color:rgba(243,242,238,.5);display:flex;flex-wrap:wrap;gap:6px 22px}
+.fine a{color:rgba(243,242,238,.75)}
+
+/* barra rapida su telefono */
+.rapida{position:fixed;left:0;right:0;bottom:0;z-index:40;display:grid;grid-template-columns:1fr 1.3fr 1fr;background:rgba(20,24,29,.96);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);padding:8px 8px calc(8px + env(safe-area-inset-bottom));gap:6px;transform:translateY(110%);transition:transform .35s ease}
+.rapida.su{transform:none}
+.rapida a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;color:var(--carta);text-decoration:none;font:500 12px/1 var(--sans);border-radius:8px}
+.rapida a svg{width:20px;height:20px}
+.rapida a.pri{background:var(--giallo);color:var(--notte);font-weight:600;font-size:13px}
+
+/* comparsa */
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+
+@media (min-width:640px){
+  .valori ul{grid-template-columns:repeat(3,1fr);gap:28px}
+  .valori li+li{border-top:0}
+  .galleria{grid-template-columns:repeat(3,1fr)}
+  .cit{grid-template-columns:1fr 1fr}
+  .cit blockquote:first-child{grid-column:1/-1}
+}
+@media (min-width:900px){
+  .menu{display:flex}
+  .mezzi{grid-template-columns:repeat(3,1fr)}
+  .pan{grid-template-columns:1.05fr 1fr}
+  .media img{aspect-ratio:1;max-height:560px}
+  .gomme{grid-template-columns:1fr 1.05fr}
+  .storia .wrap{grid-template-columns:1.1fr 1fr}
+  .galleria{grid-template-columns:repeat(4,1fr);grid-auto-rows:1fr}
+  .galleria figure:first-child{grid-column:span 2;grid-row:span 2}
+  .galleria figure:first-child img{aspect-ratio:auto}
+  .rec .wrap{grid-template-columns:.8fr 2fr;align-items:start}
+  .prev .wrap{grid-template-columns:1fr 1.05fr;align-items:center}
+  .dove .wrap{grid-template-columns:1fr 1.1fr;align-items:start}
+  .faq .wrap{grid-template-columns:1fr 1.5fr}
+  .piede .wrap{grid-template-columns:1.5fr 1fr 1fr 1fr}
+  .fine{grid-column:1/-1}
+  .rapida{display:none}
+}
+@media (max-width:899px){
+  .piede{padding-bottom:calc(110px + env(safe-area-inset-bottom))}
+}
+@media (max-width:420px){
+  .modulo .campi{grid-template-columns:1fr}
+  .barra .btn{padding:0 14px}
+  .logo b{font-size:1.25rem}
+  .logo small{letter-spacing:.14em}
+  .numeri span{font-size:.78rem}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .js .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<a class="salta" href="#contenuto">Salta al contenuto</a>
+<div class="bnw-fascia">Bozza preparata per S.G.A. Automobili da <a href="https://labottegadelweb.it">La bottega del web</a>. Non ancora online.<small>Le foto sono di esempio: le sostituiamo con le vostre.</small></div>
+
+<header class="barra">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="S.G.A. Automobili, torna su">
+      <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 25v-4.5l3.5-7A3 3 0 0 1 11.2 12h17.6a3 3 0 0 1 2.7 1.5l3.5 7V25a1.5 1.5 0 0 1-1.5 1.5H6.5A1.5 1.5 0 0 1 5 25z"/><path d="M8 20.5h24"/><circle cx="12" cy="26.5" r="3"/><circle cx="28" cy="26.5" r="3"/><path d="M15 16h10"/></svg>
+      <span><b>S.G.A. Automobili</b><small>Bergamo · dal 1975</small></span>
+    </a>
+    <nav aria-label="Principale">
+      <ul class="menu">
+        <li><a href="#noleggio">Noleggio</a></li>
+        <li><a href="#servizi">Usato e officina</a></li>
+        <li><a href="#gomme">Gomme</a></li>
+        <li><a href="#orari">Orari e dove</a></li>
+      </ul>
+    </nav>
+    <a class="btn" href="#richiesta">Scrivici</a>
+  </div>
+</header>
+
+<main id="contenuto">
+<section class="hero" aria-labelledby="titolo">
+  <picture>
+    <img src="https://images.unsplash.com/photo-1630165356623-266076eaceb6?auto=format&fit=crop&w=2000&q=70" srcset="https://images.unsplash.com/photo-1630165356623-266076eaceb6?auto=format&fit=crop&w=900&q=70 900w,https://images.unsplash.com/photo-1630165356623-266076eaceb6?auto=format&fit=crop&w=2000&q=70 2000w" sizes="100vw" alt="Una fila di auto parcheggiate nel piazzale" fetchpriority="high" width="2000" height="1333">
+  </picture>
+  <div class="wrap">
+    <p class="occhiello">Noleggio · Usato · Officina · Gommista</p>
+    <h1 id="titolo">Auto, furgoni e pulmini. <em>Dal 1975 a Bergamo</em>.</h1>
+    <p class="sotto">Oltre 100 mezzi a noleggio a giornata, a settimana o a mese, auto usate di ogni marca, officina e gommista su tutte le marche. Tutto in via Fratelli Bandiera 45.</p>
+    <div class="azioni">
+      <a class="btn caldo" href="#noleggio">Chiedi un mezzo a noleggio</a>
+      <a class="btn vetro" href="tel:+3935259898"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>035 259898</a>
+    </div>
+    <p class="stato" id="stato" aria-live="polite"><span class="punto" aria-hidden="true"></span><span id="stato-t">Lun–Ven 8:00–12:00 · 14:00–19:00 · Sab 8:00–12:00</span></p>
+  </div>
+</section>
+
+<section class="valori" aria-label="Perché sceglierci">
+  <div class="wrap">
+    <ul>
+      <li class="rv"><svg viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="17" cy="17" r="13"/><path d="M17 9v8l5 3"/></svg><div><b>A Bergamo dal 1975</b><span>Oltre cinquant'anni di auto, noleggio e officina, con il titolare Adriano.</span></div></li>
+      <li class="rv"><svg viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 22v-4l3-6h16l4 6h4a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><circle cx="9" cy="23" r="2.6"/><circle cx="24" cy="23" r="2.6"/><path d="M6 18h20"/></svg><div><b>Oltre 100 mezzi a noleggio</b><span>Auto di ogni fascia, 10 furgoni e 10 pulmini da 9 posti.</span></div></li>
+      <li class="rv"><svg viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M17 4l3.9 8 8.6 1.2-6.3 6 1.5 8.6L17 23.7l-7.7 4.1 1.5-8.6-6.3-6L13.1 12z"/></svg><div><b>4,8 su Google</b><span>Da 89 recensioni: «operatori seri e disponibili, prezzi buoni».</span></div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sez nol" id="noleggio" aria-labelledby="t-nol">
+  <div class="wrap">
+    <p class="occhiello rv">Noleggio</p>
+    <h2 id="t-nol" class="rv">Il mezzo giusto, <em>per il tempo che serve</em>.</h2>
+    <p class="intro rv">Scegliete per quanto tempo vi serve e il tipo di mezzo: vi prepariamo la richiesta di disponibilità da mandare su WhatsApp.</p>
+    <div class="durate rv" role="group" aria-label="Durata del noleggio">
+      <button type="button" aria-pressed="true" data-durata="A giornata">A giornata</button>
+      <button type="button" aria-pressed="false" data-durata="A settimana">A settimana</button>
+      <button type="button" aria-pressed="false" data-durata="A mese">A mese</button>
+    </div>
+    <p class="durate-n rv" id="durata-n" aria-live="polite">Per un trasloco, una gita, l'auto in officina o un imprevisto.</p>
+    <div class="mezzi">
+      <article class="mezzo rv">
+        <figure><img src="https://images.unsplash.com/photo-1766524791677-6c6c495e0218?auto=format&fit=crop&w=900&q=70" alt="Auto parcheggiate in fila" loading="lazy" width="900" height="563"><span class="num">oltre 100</span></figure>
+        <div class="corpo">
+          <h3>Auto</h3>
+          <p>Di ogni fascia: dall'utilitaria per la città alla station wagon per le vacanze.</p>
+          <ul><li>Utilitarie</li><li>Berline</li><li>Station wagon</li><li>SUV</li></ul>
+          <a class="btn" href="#richiesta" data-mezzo="Auto">Chiedi un'auto</a>
+        </div>
+      </article>
+      <article class="mezzo rv">
+        <figure><img src="https://images.unsplash.com/photo-1587813369290-091c9d432daf?auto=format&fit=crop&w=900&q=70" alt="Furgoni bianchi parcheggiati in fila" loading="lazy" width="900" height="563"><span class="num">10 furgoni</span></figure>
+        <div class="corpo">
+          <h3>Furgoni</h3>
+          <p>Per traslochi, consegne, fiere o quando il vostro furgone è fermo in officina.</p>
+          <ul><li>Traslochi</li><li>Lavoro</li><li>Consegne</li></ul>
+          <a class="btn" href="#richiesta" data-mezzo="Furgone">Chiedi un furgone</a>
+        </div>
+      </article>
+      <article class="mezzo rv">
+        <figure><img src="https://images.unsplash.com/photo-1535655685871-dc8158ff167e?auto=format&fit=crop&w=900&q=70" alt="Pulmino bianco parcheggiato al tramonto" loading="lazy" width="900" height="563"><span class="num">10 pulmini · 9 posti</span></figure>
+        <div class="corpo">
+          <h3>Pulmini 9 posti</h3>
+          <p>Per squadre, gruppi di amici, matrimoni e trasferte di lavoro: tutti nello stesso mezzo.</p>
+          <ul><li>Squadre</li><li>Gite</li><li>Trasferte</li><li>Aeroporto</li></ul>
+          <a class="btn" href="#richiesta" data-mezzo="Pulmino 9 posti">Chiedi un pulmino</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sez" id="servizi" aria-labelledby="t-serv">
+  <div class="wrap">
+    <p class="occhiello rv">Usato, officina e carrozzeria</p>
+    <h2 id="t-serv" class="rv">Dall'acquisto <em>al tagliando</em>.</h2>
+    <p class="intro rv">Comprate l'auto, la fate controllare e la riportate per le gomme: sempre dalle stesse persone, nello stesso posto.</p>
+
+    <div class="schede" role="tablist" aria-label="Servizi">
+      <button role="tab" id="s-usa" aria-controls="p-usa" aria-selected="true">Auto usate</button>
+      <button role="tab" id="s-off" aria-controls="p-off" aria-selected="false" tabindex="-1">Officina</button>
+      <button role="tab" id="s-gom" aria-controls="p-gom" aria-selected="false" tabindex="-1">Gommista</button>
+      <button role="tab" id="s-car" aria-controls="p-car" aria-selected="false" tabindex="-1">Carrozzeria</button>
+    </div>
+
+    <div class="pannello" role="tabpanel" id="p-usa" aria-labelledby="s-usa" tabindex="0">
+      <div class="pan">
+        <div>
+          <h3>Auto usate di ogni marca</h3>
+          <p class="desc">Le auto in salone cambiano spesso, per questo non le mettiamo online. Diteci cosa cercate e quanto volete spendere: vi mandiamo le proposte su WhatsApp, con le foto.</p>
+          <ul class="voci">
+            <li><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9.5l4 4 8-9"/></svg>Usato di tutte le marche</li>
+            <li><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9.5l4 4 8-9"/></svg>Controllate nella nostra officina</li>
+            <li><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9.5l4 4 8-9"/></svg>Finanziamenti su misura</li>
+          </ul>
+          <div class="cosa"><small>Per trovare l'auto giusta diteci</small>
+            <ol><li>che tipo di auto vi serve (utilitaria, familiare, SUV…)</li><li>il budget, anche indicativo</li><li>se avete un'auto da dare in permuta</li></ol>
+            <a href="#richiesta" data-tipo="Auto usata">Cerca un'auto con noi →</a></div>
+        </div>
+        <figure class="media"><img src="https://images.unsplash.com/photo-1787213249224-d878e135179f?auto=format&fit=crop&w=1000&q=70" alt="Auto usate nel piazzale di un autosalone" loading="lazy" width="1000" height="1250"><figcaption>Il piazzale</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="pannello" role="tabpanel" id="p-off" aria-labelledby="s-off" tabindex="0" hidden>
+      <div class="pan">
+        <div>
+          <h3>Officina su tutte le marche</h3>
+          <p class="desc">Manutenzione e riparazioni per auto di ogni marca. Se l'auto deve restare in officina, vi diamo un'auto sostitutiva: il parco noleggio è proprio qui accanto.</p>
+          <ul class="voci">
+            <li><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9.5l4 4 8-9"/></svg>Tagliandi e manutenzione</li>
+            <li><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9.5l4 4 8-9"/></svg>Riparazioni meccaniche ed elettrauto</li>
+            <li><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9.5l4 4 8-9"/></svg>Auto sostitutiva durante il lavoro</li>
+          </ul>
+          <div class="cosa"><small>Per fissare l'appuntamento diteci</small>
+            <ol><li>marca, modello e targa</li><li>cosa fa l'auto, o che lavoro serve</li><li>quando potete lasciarla</li></ol>
+            <a href="#richiesta" data-tipo="Officina">Prenota l'officina →</a></div>
+        </div>
+        <figure class="media"><img src="https://images.unsplash.com/photo-1771340012319-0b4fca008b54?auto=format&fit=crop&w=1000&q=70" alt="Meccanico al lavoro su un'auto sul ponte sollevatore" loading="lazy" width="1000" height="1250"><figcaption>In officina</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="pannello" role="tabpanel" id="p-gom" aria-labelledby="s-gom" tabindex="0" hidden>
+      <div class="pan">
+        <div>
+          <h3>Gommista e deposito gomme</h3>
+          <p class="desc">Cambio stagionale delle gomme, estive e invernali. Le gomme che togliete le teniamo noi nel deposito, fino al cambio successivo: niente pneumatici in cantina.</p>
+          <ul class="voci">
+            <li><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9.5l4 4 8-9"/></svg>Cambio gomme estive e invernali</li>
+            <li><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9.5l4 4 8-9"/></svg>Deposito pneumatici</li>
+            <li><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9.5l4 4 8-9"/></svg>Gomme nuove per tutte le auto</li>
+          </ul>
+          <div class="cosa"><small>Per il cambio gomme diteci</small>
+            <ol><li>modello dell'auto e targa</li><li>se le gomme sono già nel nostro deposito</li><li>il giorno che preferite</li></ol>
+            <a href="#richiesta" data-tipo="Cambio gomme">Prenota il cambio gomme →</a></div>
+        </div>
+        <figure class="media"><img src="https://images.unsplash.com/photo-1645445522156-9ac06bc7a767?auto=format&fit=crop&w=1000&q=70" alt="Mani con i guanti che montano una gomma" loading="lazy" width="1000" height="1250"><figcaption>Cambio gomme</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="pannello" role="tabpanel" id="p-car" aria-labelledby="s-car" tabindex="0" hidden>
+      <div class="pan">
+        <div>
+          <h3>Carrozzeria: ci pensiamo noi</h3>
+          <p class="desc">Dopo un incidente o un'ammaccatura, portate l'auto da noi. La carrozzeria non la facciamo direttamente, ma seguiamo noi tutto il ripristino, dall'inizio alla riconsegna. È quello che fa la maggior parte dei nostri clienti.</p>
+          <ul class="voci">
+            <li><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9.5l4 4 8-9"/></svg>Un solo referente per tutto il lavoro</li>
+            <li><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9.5l4 4 8-9"/></svg>Ritirate l'auto riparata qui da noi</li>
+            <li><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9.5l4 4 8-9"/></svg>Un'auto a noleggio se vi serve nel frattempo</li>
+          </ul>
+          <div class="cosa"><small>Per partire mandateci</small>
+            <ol><li>qualche foto del danno</li><li>marca, modello e targa</li></ol>
+            <a href="#richiesta" data-tipo="Carrozzeria">Mandaci le foto del danno →</a></div>
+        </div>
+        <figure class="media"><img src="https://images.unsplash.com/photo-1767681092416-bccf9410bda4?auto=format&fit=crop&w=1000&q=70" alt="Auto in riparazione in un'officina" loading="lazy" width="1000" height="1250"><figcaption>Ripristino seguito da noi</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sez" id="gomme" aria-labelledby="t-gom" style="padding-top:0">
+  <div class="wrap gomme">
+    <div>
+      <p class="occhiello rv">Gomme</p>
+      <h2 id="t-gom" class="rv">Il cambio gomme, <em>al momento giusto</em>.</h2>
+      <p class="intro rv">In Lombardia, come nel resto d'Italia, sulle strade con l'obbligo le gomme invernali (o le catene a bordo) servono dal 15 novembre al 15 aprile. Il cambio si può fare un mese prima e un mese dopo.</p>
+    </div>
+    <div class="stagione rv" id="stagione">
+      <small id="stag-o">Oggi</small>
+      <b id="stag-t">Gomme invernali dal 15 novembre al 15 aprile.</b>
+      <p id="stag-p">Prenotate il cambio: le gomme che togliete restano nel nostro deposito.</p>
+      <div class="calend" id="calend" aria-hidden="true"></div>
+      <div class="calend-l" aria-hidden="true"><span>G</span><span>F</span><span>M</span><span>A</span><span>M</span><span>G</span><span>L</span><span>A</span><span>S</span><span>O</span><span>N</span><span>D</span></div>
+      <div class="legenda" aria-hidden="true"><span><i style="background:rgba(120,170,230,.7)"></i>invernali</span><span><i style="background:#F2B33D"></i>periodo del cambio</span><span><i style="background:rgba(243,242,238,.25)"></i>estive</span></div>
+      <a class="btn caldo" href="#richiesta" data-tipo="Cambio gomme">Prenota il cambio gomme</a>
+    </div>
+  </div>
+</section>
+
+<section class="sez storia" aria-labelledby="t-sto" style="padding-top:0">
+  <div class="wrap">
+    <div>
+      <p class="occhiello rv">Chi siamo</p>
+      <h2 id="t-sto" class="rv">Dal 1975, <em>sempre qui</em>.</h2>
+      <p class="testo rv">S.G.A. è un'azienda di Bergamo nata nel 1975. Il titolare è Adriano. Insieme ai meccanici dell'officina seguiamo i clienti dall'acquisto dell'auto al noleggio, fino ai tagliandi e al cambio gomme.</p>
+      <p class="testo rv">Salone, officina, deposito gomme e parco noleggio sono nello stesso posto, in via Fratelli Bandiera: quando l'auto resta in officina, il mezzo sostitutivo è a pochi metri.</p>
+      <div class="numeri rv">
+        <div><b>1975</b><span>l'anno in cui abbiamo iniziato</span></div>
+        <div><b>100+</b><span>mezzi a noleggio</span></div>
+        <div><b>4,8</b><span>su Google, 89 recensioni</span></div>
+      </div>
+    </div>
+    <figure class="rv"><img src="https://images.unsplash.com/photo-1761014586544-53fe5e1f1e25?auto=format&fit=crop&w=1000&q=70" alt="Consegna delle chiavi di un'auto" loading="lazy" width="1000" height="1250"><figcaption>La consegna delle chiavi</figcaption></figure>
+  </div>
+</section>
+
+<section class="sez" aria-labelledby="t-gal" style="padding-top:0">
+  <div class="wrap">
+    <p class="occhiello rv">Foto</p>
+    <h2 id="t-gal" class="rv">Il salone, l'officina, <em>i mezzi</em>.</h2>
+    <div class="galleria">
+      <figure class="rv"><img src="https://images.unsplash.com/photo-1767681092416-bccf9410bda4?auto=format&fit=crop&w=1200&q=70" alt="Officina con auto sui ponti sollevatori" loading="lazy" width="1200" height="900"><figcaption>L'officina</figcaption></figure>
+      <figure class="rv"><img src="https://images.unsplash.com/photo-1535655685871-dc8158ff167e?auto=format&fit=crop&w=600&q=70" alt="Pulmino da 9 posti" loading="lazy" width="600" height="600"><figcaption>Pulmino 9 posti</figcaption></figure>
+      <figure class="rv"><img src="https://images.unsplash.com/photo-1792793182756-de1abcba6d70?auto=format&fit=crop&w=600&q=70" alt="Pneumatici impilati accanto all'equilibratrice" loading="lazy" width="600" height="600"><figcaption>Deposito gomme</figcaption></figure>
+      <figure class="rv"><img src="https://images.unsplash.com/photo-1625047509248-ec889cbff17f?auto=format&fit=crop&w=600&q=70" alt="Meccanico che controlla il motore" loading="lazy" width="600" height="600"><figcaption>Controllo motore</figcaption></figure>
+      <figure class="rv"><img src="https://images.unsplash.com/photo-1587813369290-091c9d432daf?auto=format&fit=crop&w=600&q=70" alt="Furgoni a noleggio in fila" loading="lazy" width="600" height="600"><figcaption>Furgoni a noleggio</figcaption></figure>
+    </div>
+    <p class="nota">Foto di esempio: nel sito definitivo mettiamo le foto del vostro piazzale, dell'officina e dei vostri mezzi.</p>
+  </div>
+</section>
+
+<section class="sez rec" aria-labelledby="t-rec">
+  <div class="wrap">
+    <div class="voto rv">
+      <p class="occhiello">Recensioni</p>
+      <h2 id="t-rec" class="sr" style="font-size:0;height:0;overflow:hidden">Recensioni dei clienti</h2>
+      <b>4,8</b>
+      <div class="stelle" aria-label="4,8 stelle su 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></div>
+      <p>Media di 89 recensioni su Google.</p>
+      <a href="https://maps.google.com/?cid=16308661116859934407" target="_blank" rel="noopener">Leggile tutte su Google →</a>
+    </div>
+    <div class="cit">
+      <blockquote class="rv"><p>«Ottimo autosalone e autofficina. Il titolare Adriano una persona di cuore. Mirko e il suo staff di meccanici sempre disponibili e molto professionali. Consigliato per tutte le tasche.»</p><footer><b>Tomas D.</b> · recensione su Google</footer></blockquote>
+      <blockquote class="rv"><p>«Ho acquistato un Rav 4 dopo aver girato tutta la Lombardia. Molto soddisfatto per la serietà e la puntualità.»</p><footer><b>Giuseppe C.</b> · Local Guide su Google</footer></blockquote>
+      <blockquote class="rv"><p>«Staff molto efficiente e preparato. Prezzi onesti, ottima qualità. Consigliato.»</p><footer><b>Stefano B.</b> · recensione su Google</footer></blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="sez dove" id="orari" aria-labelledby="t-ora">
+  <div class="wrap">
+    <div>
+      <p class="occhiello rv">Orari e dove</p>
+      <h2 id="t-ora" class="rv">Via Fratelli Bandiera 45, <em>Bergamo</em>.</h2>
+      <ul class="orari rv" id="ore">
+        <li data-g="1" data-o="08:00-12:00,14:00-19:00"><span>Lunedì</span><span>8:00–12:00 · 14:00–19:00</span></li>
+        <li data-g="2" data-o="08:00-12:00,14:00-19:00"><span>Martedì</span><span>8:00–12:00 · 14:00–19:00</span></li>
+        <li data-g="3" data-o="08:00-12:00,14:00-19:00"><span>Mercoledì</span><span>8:00–12:00 · 14:00–19:00</span></li>
+        <li data-g="4" data-o="08:00-12:00,14:00-19:00"><span>Giovedì</span><span>8:00–12:00 · 14:00–19:00</span></li>
+        <li data-g="5" data-o="08:00-12:00,14:00-19:00"><span>Venerdì</span><span>8:00–12:00 · 14:00–19:00</span></li>
+        <li data-g="6" data-o="08:00-12:00"><span>Sabato</span><span>8:00–12:00</span></li>
+        <li data-g="0"><span>Domenica</span><span>Chiuso</span></li>
+      </ul>
+      <ul class="come rv">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 20l1.2-4.1A8 8 0 1 1 8.2 19z"/></svg><span>Su WhatsApp potete scriverci quando volete: rispondiamo negli orari di apertura.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 12h18M13 6l6 6-6 6"/></svg><span>Per il ritiro di un mezzo a noleggio, venite negli orari di apertura con patente e documento.</span></li>
+      </ul>
+    </div>
+    <div class="mappa rv" id="mappa">
+      <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true">
+        <path d="M-10 210 L410 150" stroke="#F3F2EE" stroke-opacity=".35" stroke-width="10"/>
+        <path d="M150 -10 L190 310" stroke="#F3F2EE" stroke-opacity=".25" stroke-width="7"/>
+        <path d="M-10 80 Q200 120 410 60" stroke="#F3F2EE" stroke-opacity=".18" stroke-width="5"/>
+        <path d="M300 -10 L330 310" stroke="#F3F2EE" stroke-opacity=".15" stroke-width="4"/>
+        <circle cx="178" cy="185" r="26" fill="rgba(242,179,61,.18)"/>
+        <circle cx="178" cy="185" r="8" fill="#F2B33D" stroke="#14181D" stroke-width="2"/>
+      </svg>
+      <div class="box">
+        <address>Via Fratelli Bandiera 45<br>24127 Bergamo</address>
+        <p>Salone, officina e parco noleggio nello stesso posto.</p>
+        <button class="btn caldo" type="button" id="apri-mappa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg>Mostra la mappa</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sez faq" id="domande" aria-labelledby="t-faq">
+  <div class="wrap">
+    <div>
+      <p class="occhiello rv">Domande</p>
+      <h2 id="t-faq" class="rv">Prima di <em>chiamarci</em>.</h2>
+    </div>
+    <div class="domande rv">
+      <details><summary>Per quanto tempo posso noleggiare un mezzo?</summary><p>A giornata, a settimana o a mese. Scriveteci le date e il mezzo che vi serve: vi diciamo subito se è disponibile.</p></details>
+      <details><summary>Che mezzi avete a noleggio?</summary><p>Oltre 100 auto di ogni fascia, 10 furgoni e 10 pulmini da 9 posti.</p></details>
+      <details><summary>Le auto usate in vendita sono online?</summary><p>No: cambiano spesso. Diteci cosa cercate e quanto volete spendere, vi mandiamo le proposte su WhatsApp con le foto.</p></details>
+      <details><summary>Riparate tutte le marche?</summary><p>Sì, l'officina lavora su tutte le marche. Se l'auto deve restare da noi, chiedeteci un'auto sostitutiva.</p></details>
+      <details><summary>Fate la carrozzeria?</summary><p>Non la facciamo direttamente, ma seguiamo noi il ripristino: portate l'auto da noi e pensiamo a tutto fino alla riconsegna.</p></details>
+      <details><summary>Tenete voi le gomme tra un cambio e l'altro?</summary><p>Sì, abbiamo il deposito pneumatici: le gomme che togliete restano da noi fino al cambio successivo.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sez prev scuro" id="richiesta" aria-labelledby="t-prev">
+  <div class="prev-foto" aria-hidden="true"><img src="https://images.unsplash.com/photo-1771340742493-52fbd5476ccb?auto=format&fit=crop&w=1400&q=60" alt="" loading="lazy"></div>
+  <div class="wrap">
+    <div>
+      <p class="occhiello rv">Scrivici</p>
+      <h2 id="t-prev" class="rv">Diteci cosa vi serve, <em>vi rispondiamo noi</em>.</h2>
+      <p class="intro rv">Compilate le righe qui accanto: si apre WhatsApp con il messaggio già scritto. Oppure chiamateci negli orari di apertura.</p>
+      <ul class="contatti rv">
+        <li><a href="tel:+3935259898"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2"/></svg><span>035 259898<small>Lun–Ven 8–12 e 14–19, Sab 8–12</small></span></a></li>
+        <li><a href="https://wa.me/393517123477?text=Buongiorno%2C%20vi%20scrivo%20dal%20sito." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 20l1.2-4.1A8 8 0 1 1 8.2 19z"/></svg><span>WhatsApp 351 712 3477<small>Il modo più veloce</small></span></a></li>
+        <li><a href="mailto:sgabergamo@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg><span>sgabergamo@gmail.com<small>Per chi preferisce l'email</small></span></a></li>
+      </ul>
+    </div>
+    <form class="modulo rv" id="modulo" novalidate>
+      <h3>Richiesta</h3>
+      <p class="sotto-t">Senza impegno. Vi rispondiamo negli orari di apertura.</p>
+      <div class="campi">
+        <fieldset class="campo largo scelte-f">
+          <legend>Cosa vi serve?</legend>
+          <div class="scelte" id="f-tipo">
+            <label><input type="radio" name="tipo" value="Noleggio"><span>Noleggio</span></label>
+            <label><input type="radio" name="tipo" value="Auto usata"><span>Auto usata</span></label>
+            <label><input type="radio" name="tipo" value="Officina"><span>Officina</span></label>
+            <label><input type="radio" name="tipo" value="Cambio gomme"><span>Gomme</span></label>
+            <label><input type="radio" name="tipo" value="Carrozzeria"><span>Carrozzeria</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="campo largo scelte-f" id="c-mezzo" hidden>
+          <legend>Che mezzo?</legend>
+          <div class="scelte" id="f-mezzo">
+            <label><input type="radio" name="mezzo" value="Auto" checked><span>Auto</span></label>
+            <label><input type="radio" name="mezzo" value="Furgone"><span>Furgone</span></label>
+            <label><input type="radio" name="mezzo" value="Pulmino 9 posti"><span>Pulmino 9 posti</span></label>
+          </div>
+        </fieldset>
+        <div class="campo" id="c-dal" hidden><label for="f-dal">Dal</label><input type="date" id="f-dal" name="dal"></div>
+        <div class="campo" id="c-al" hidden><label for="f-al">Al</label><input type="date" id="f-al" name="al"></div>
+        <div class="campo" id="c-auto" hidden><label for="f-auto">Auto e targa</label><input type="text" id="f-auto" name="auto" placeholder="es. Fiat Panda, AB123CD"></div>
+        <div class="campo"><label for="f-nome">Nome</label><input type="text" id="f-nome" name="nome" autocomplete="name" required></div>
+        <div class="campo largo"><label for="f-note">Note (facoltativo)</label><textarea id="f-note" name="note" placeholder="Cosa cercate, che lavoro serve, quante persone…"></textarea></div>
+      </div>
+      <button class="btn" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 20l1.2-4.1A8 8 0 1 1 8.2 19z"/></svg>Continua su WhatsApp</button>
+      <p class="errore" id="errore" role="alert"></p>
+      <p class="info">Si apre WhatsApp con il messaggio pronto: lo inviate voi.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="piede">
+  <div class="wrap">
+    <div>
+      <a class="logo" href="#" aria-label="S.G.A. Automobili, torna su">
+        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 25v-4.5l3.5-7A3 3 0 0 1 11.2 12h17.6a3 3 0 0 1 2.7 1.5l3.5 7V25a1.5 1.5 0 0 1-1.5 1.5H6.5A1.5 1.5 0 0 1 5 25z"/><path d="M8 20.5h24"/><circle cx="12" cy="26.5" r="3"/><circle cx="28" cy="26.5" r="3"/><path d="M15 16h10"/></svg>
+        <span><b>S.G.A. Automobili</b><small>Bergamo · dal 1975</small></span>
+      </a>
+      <p style="margin-top:16px;max-width:26em">Noleggio auto, furgoni e pulmini 9 posti, auto usate, officina e gommista. Via Fratelli Bandiera 45, Bergamo.</p>
+    </div>
+    <div>
+      <h3>Contatti</h3>
+      <ul>
+        <li><a href="tel:+3935259898">035 259898</a></li>
+        <li><a href="https://wa.me/393517123477" target="_blank" rel="noopener">WhatsApp 351 712 3477</a></li>
+        <li><a href="mailto:sgabergamo@gmail.com">sgabergamo@gmail.com</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Orari</h3>
+      <ul>
+        <li><span>Lun–Ven 8:00–12:00</span></li>
+        <li><span>e 14:00–19:00</span></li>
+        <li><span>Sabato 8:00–12:00</span></li>
+        <li><span>Domenica chiuso</span></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Pagina</h3>
+      <ul>
+        <li><a href="#noleggio">Noleggio</a></li>
+        <li><a href="#servizi">Usato e officina</a></li>
+        <li><a href="#gomme">Gomme</a></li>
+        <li><a href="#richiesta">Scrivici</a></li>
+      </ul>
+    </div>
+    <p class="fine"><span>S.G.A. Società Gestione Autosaloni Srl · Via Fratelli Bandiera 45, 24127 Bergamo · P.IVA 02164700169</span><span>Foto di esempio: Unsplash</span><span>Bozza di <a href="https://labottegadelweb.it">La bottega del web</a></span></p>
+  </div>
+</footer>
+
+<nav class="rapida" id="rapida" aria-label="Azioni rapide">
+  <a href="tel:+3935259898"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>Chiama</a>
+  <a class="pri" href="#noleggio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 15v-3l2-4h11l3 4h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><circle cx="7.5" cy="16" r="2"/><circle cx="17" cy="16" r="2"/></svg>Noleggio</a>
+  <a href="https://wa.me/393517123477?text=Buongiorno%2C%20vi%20scrivo%20dal%20sito." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 20l1.2-4.1A8 8 0 1 1 8.2 19z"/></svg>WhatsApp</a>
+</nav>
+
+<script>
+(function(){
+  var WA="393517123477";
+  var ora=new Date(),g=ora.getDay(),min=ora.getHours()*60+ora.getMinutes();
+  var nomi=["domenica","lunedì","martedì","mercoledì","giovedì","venerdì","sabato"];
+  function m(s){var p=s.split(":");return +p[0]*60+ +p[1]}
+  function fasce(giorno){var li=document.querySelector('#ore li[data-g="'+giorno+'"]'),o=li&&li.getAttribute("data-o");
+    return o?o.split(",").map(function(f){var x=f.split("-");return [m(x[0]),m(x[1]),x[0].replace(/^0/,""),x[1].replace(/^0/,"")]}):[]}
+
+  /* orari: riga di oggi + stato aperto/chiuso */
+  var li=document.querySelector('#ore li[data-g="'+g+'"]');if(li)li.className="oggi-r";
+  var st=document.getElementById("stato"),tx=document.getElementById("stato-t"),oggi=fasce(g),msg=null;
+  for(var i=0;i<oggi.length;i++){
+    if(min>=oggi[i][0]&&min<oggi[i][1]){st.classList.add("aperto");msg="<b>Aperto ora</b> · fino alle "+oggi[i][3];break}
+    if(min<oggi[i][0]){st.classList.add("chiuso");msg="<b>Chiuso ora</b> · riapre alle "+oggi[i][2];break}
+  }
+  if(!msg){for(var d=1;d<=7;d++){var gg=(g+d)%7,f=fasce(gg);if(f.length){st.classList.add("chiuso");
+    msg="<b>Chiuso ora</b> · riapre "+(d===1?"domani":nomi[gg])+" alle "+f[0][2];break}}}
+  if(msg)tx.innerHTML=msg;
+
+  /* durata del noleggio */
+  var durata="A giornata",dn=document.getElementById("durata-n"),
+      testi={"A giornata":"Per un trasloco, una gita, l'auto in officina o un imprevisto.",
+             "A settimana":"Per le vacanze, una trasferta o un cantiere di qualche giorno.",
+             "A mese":"Per un lavoro stagionale o quando vi serve un mezzo in più per un po'."};
+  [].forEach.call(document.querySelectorAll("[data-durata]"),function(b){b.addEventListener("click",function(){
+    [].forEach.call(document.querySelectorAll("[data-durata]"),function(x){x.setAttribute("aria-pressed",x===b)});
+    durata=b.getAttribute("data-durata");dn.textContent=testi[durata]})});
+
+  /* campi del modulo in base a cosa serve */
+  var fm=document.getElementById("modulo"),er=document.getElementById("errore");
+  function campi(){var t=fm.querySelector('input[name="tipo"]:checked'),v=t?t.value:"";
+    var nol=v==="Noleggio",aut=v==="Officina"||v==="Cambio gomme"||v==="Carrozzeria";
+    document.getElementById("c-mezzo").hidden=!nol;document.getElementById("c-dal").hidden=!nol;document.getElementById("c-al").hidden=!nol;
+    document.getElementById("c-auto").hidden=!aut}
+  [].forEach.call(fm.querySelectorAll('input[name="tipo"]'),function(r){r.addEventListener("change",campi)});
+  function scegli(tipo,mezzo){var r=fm.querySelector('input[name="tipo"][value="'+tipo+'"]');if(r)r.checked=true;
+    if(mezzo){var z=fm.querySelector('input[name="mezzo"][value="'+mezzo+'"]');if(z)z.checked=true}campi()}
+  [].forEach.call(document.querySelectorAll("[data-mezzo]"),function(a){a.addEventListener("click",function(){scegli("Noleggio",a.getAttribute("data-mezzo"))})});
+  [].forEach.call(document.querySelectorAll("[data-tipo]"),function(a){a.addEventListener("click",function(){scegli(a.getAttribute("data-tipo"))})});
+
+  /* modulo: apre WhatsApp con il messaggio già scritto */
+  function it(s){if(!s)return"";var p=s.split("-");return p[2]+"/"+p[1]+"/"+p[0]}
+  fm.addEventListener("submit",function(e){e.preventDefault();
+    var tipo=fm.querySelector('input[name="tipo"]:checked'),nome=fm.nome.value.trim(),note=fm.note.value.trim();
+    if(!tipo){er.textContent="Scegliete cosa vi serve.";fm.querySelector('input[name="tipo"]').focus();return}
+    if(!nome){er.textContent="Scrivete il vostro nome.";fm.nome.focus();return}
+    er.textContent="";var t="Buongiorno, sono "+nome+". ";
+    if(tipo.value==="Noleggio"){var mz=fm.querySelector('input[name="mezzo"]:checked');
+      t+="Vorrei sapere se avete disponibile a noleggio: "+(mz?mz.value:"un mezzo")+" ("+durata.toLowerCase()+")";
+      if(fm.dal.value)t+="\nDal: "+it(fm.dal.value);if(fm.al.value)t+="\nAl: "+it(fm.al.value)}
+    else if(tipo.value==="Auto usata"){t+="Cerco un'auto usata."}
+    else{t+="Vi scrivo per: "+tipo.value.toLowerCase()+".";if(fm.auto.value.trim())t+="\nAuto: "+fm.auto.value.trim()}
+    if(note)t+="\nNote: "+note;
+    var url="https://wa.me/"+WA+"?text="+encodeURIComponent(t);
+    var w=window.open(url,"_blank","noopener");if(!w)location.href=url});
+
+  /* calendario gomme: mese corrente e stagione */
+  var cal=document.getElementById("calend"),mm=ora.getMonth(),dd=ora.getDate();
+  for(var k=0;k<12;k++){var s=document.createElement("span");
+    if(k<=2||k===11)s.className="inv";if(k===3||k===4||k===9||k===10)s.className="cambio";if(k===mm)s.className+=" ora";cal.appendChild(s)}
+  var o=document.getElementById("stag-o"),t1=document.getElementById("stag-t"),p1=document.getElementById("stag-p"),md=mm*100+dd;
+  if(md>=915&&md<1015){o.textContent="Oggi";t1.textContent="Dal 15 novembre servono le gomme invernali.";p1.textContent="Dal 15 ottobre potete già montarle: prenotate il cambio per tempo."}
+  else if(md>=1015||md<315){o.textContent="Oggi";t1.textContent="È il periodo delle gomme invernali.";p1.textContent="Obbligo dal 15 novembre al 15 aprile. Non le avete ancora montate? Prenotate il cambio."}
+  else if(md>=315&&md<415){o.textContent="Oggi";t1.textContent="Dal 15 aprile si torna alle estive.";p1.textContent="C'è tempo fino al 15 maggio: le invernali restano nel nostro deposito."}
+  else if(md>=415){o.textContent="Oggi";t1.textContent="È il momento delle gomme estive.";p1.textContent="Le invernali le teniamo noi nel deposito fino al prossimo cambio."}
+
+  /* mappa caricata solo su richiesta */
+  document.getElementById("apri-mappa").addEventListener("click",function(){var f=document.createElement("iframe");
+    f.title="Mappa: Via Fratelli Bandiera 45, Bergamo";f.loading="lazy";f.referrerPolicy="no-referrer-when-downgrade";
+    f.src="https://www.google.com/maps?q=Via+Fratelli+Bandiera+45,+24127+Bergamo&z=15&output=embed";document.getElementById("mappa").appendChild(f)});
+
+  /* barra rapida su telefono, dopo l'hero */
+  var r=document.getElementById("rapida"),h=document.querySelector(".hero");
+  if("IntersectionObserver" in window){new IntersectionObserver(function(es){r.classList.toggle("su",!es[0].isIntersecting)},{threshold:.15}).observe(h)}else r.classList.add("su");
+
+  /* comparsa allo scorrimento */
+  var rv=document.querySelectorAll(".rv");
+  if(!("IntersectionObserver" in window)){for(var j=0;j<rv.length;j++)rv[j].classList.add("in");return}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{rootMargin:"0px 0px -6% 0px"});
+  for(var q=0;q<rv.length;q++)io.observe(rv[q]);
+})();
+</script>
+</body>
+</html>
