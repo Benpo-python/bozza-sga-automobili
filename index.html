@@ -265,8 +265,9 @@ form.modulo{background:var(--carta);color:var(--ink);border-radius:8px;padding:c
 .scelte span{display:grid;place-items:center;min-height:44px;padding:0 13px;white-space:nowrap;border:1px solid rgba(22,25,29,.22);border-radius:6px;background:#fff;font:500 14.5px/1.2 var(--sans);cursor:pointer;transition:background .2s,color .2s,border-color .2s;text-align:center}
 .scelte input:checked+span{background:var(--blu);color:#fff;border-color:var(--blu)}
 .scelte input:focus-visible+span{outline:3px solid var(--rosso);outline-offset:2px}
-.modulo .btn{width:100%;margin-top:22px;background:#1f8f55;border-color:#1f8f55}
-.modulo .btn:hover{background:#18744a;border-color:#18744a}
+.modulo .btn{width:100%;margin-top:22px}
+.modulo .btn.wa{background:#1f8f55;border-color:#1f8f55}
+.modulo .btn.wa:hover{background:#18744a;border-color:#18744a}
 .modulo .info{font-size:.84rem;color:var(--mut);margin-top:12px;text-align:center}
 .errore{color:#a23a22;font-size:.88rem;margin-top:12px;text-align:center;min-height:1.2em}
 
@@ -678,9 +679,9 @@ form.modulo{background:var(--carta);color:var(--ink);border-radius:8px;padding:c
         <div class="campo largo"><label for="f-nome">Nome</label><input type="text" id="f-nome" name="nome" autocomplete="name" required></div>
         <div class="campo largo"><label for="f-note">Note (facoltativo)</label><textarea id="f-note" name="note" placeholder="Cosa cercate, che lavoro serve, quante persone…"></textarea></div>
       </div>
-      <button class="btn" type="submit" id="invia"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 20l1.2-4.1A8 8 0 1 1 8.2 19z"/></svg>Continua su WhatsApp</button>
+      <button class="btn" type="submit" id="invia">Invia la richiesta</button>
       <p class="errore" id="errore" role="alert"></p>
-      <p class="info" id="invia-i">Si apre WhatsApp con il messaggio pronto: lo inviate voi.</p>
+      <p class="info" id="invia-i">Si apre il messaggio già pronto: lo inviate voi.</p>
     </form>
   </div>
 </section>
@@ -780,8 +781,9 @@ form.modulo{background:var(--carta);color:var(--ink);border-radius:8px;padding:c
     document.getElementById("c-mezzo").hidden=!nol;document.getElementById("c-dal").hidden=!nol;document.getElementById("c-al").hidden=!nol;
     document.getElementById("c-auto").hidden=!aut;
     /* il noleggio si chiede via email, il resto su WhatsApp */
-    bt.innerHTML=nol?IC_MAIL+"Continua via email":IC_WA+"Continua su WhatsApp";
-    bi.textContent=nol?"Si apre la vostra email con il messaggio pronto: lo inviate voi.":"Si apre WhatsApp con il messaggio pronto: lo inviate voi."}
+    bt.innerHTML=!v?"Invia la richiesta":nol?IC_MAIL+"Continua via email":IC_WA+"Continua su WhatsApp";
+    bt.classList.toggle("wa",!!v&&!nol);
+    bi.textContent=!v?"Si apre il messaggio già pronto: lo inviate voi.":nol?"Si apre la vostra email con il messaggio pronto: lo inviate voi.":"Si apre WhatsApp con il messaggio pronto: lo inviate voi."}
   [].forEach.call(fm.querySelectorAll('input[name="tipo"]'),function(r){r.addEventListener("change",campi)});
   function scegli(tipo,mezzo){var r=fm.querySelector('input[name="tipo"][value="'+tipo+'"]');if(r)r.checked=true;
     if(mezzo){var z=fm.querySelector('input[name="mezzo"][value="'+mezzo+'"]');if(z)z.checked=true}campi()}
