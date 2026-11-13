@@ -338,7 +338,7 @@ form.modulo{background:var(--carta);color:var(--ink);border-radius:8px;padding:c
 </head>
 <body>
 <a class="salta" href="#contenuto">Salta al contenuto</a>
-<div class="bnw-fascia">Bozza preparata per S.G.A. Automobili da <a href="https://labottegadelweb.it">La bottega del web</a>. Non ancora online.<small>Le foto sono di esempio: le sostituiamo con le vostre.</small></div>
+<div class="bnw-fascia">Bozza preparata per S.G.A. Automobili da <a href="https://labottegadelweb.it">La bottega del web</a>. Non ancora online.<small>Alcune foto sono ancora di esempio: le sostituiamo con le vostre.</small></div>
 
 <header class="barra">
   <div class="wrap">
@@ -369,6 +369,8 @@ form.modulo{background:var(--carta);color:var(--ink);border-radius:8px;padding:c
     <p class="sotto">Dalla scelta dell'usato garantito al noleggio giornaliero, settimanale o mensile, fino all'assistenza completa per meccanica e pneumatici. Tutto ciò di cui hai bisogno in via Fratelli Bandiera 45, Bergamo.</p>
     <div class="azioni">
       <a class="btn caldo" href="#noleggio">Chiedi un mezzo a noleggio</a>
+      <a class="btn caldo" href="#richiesta" data-tipo="Officina">Prenota intervento officina</a>
+      <a class="btn caldo" href="#richiesta" data-tipo="Auto usata">Chiedi auto nuova o usata garantita</a>
       <a class="btn vetro" href="tel:+3935259898"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>035 259898</a>
     </div>
     <p class="stato" id="stato" aria-live="polite"><span class="punto" aria-hidden="true"></span><span id="stato-t">Lun–Ven 8:00–12:00 · 14:00–19:00 · Sab 8:00–12:00</span></p>
@@ -378,7 +380,7 @@ form.modulo{background:var(--carta);color:var(--ink);border-radius:8px;padding:c
 <section class="valori" aria-label="Perché sceglierci">
   <div class="wrap">
     <ul>
-      <li class="rv"><svg viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="17" cy="17" r="13"/><path d="M17 9v8l5 3"/></svg><div><b>A Bergamo dal 1975</b><span>Oltre cinquant'anni di auto, noleggio e officina, con il titolare Adriano.</span></div></li>
+      <li class="rv"><svg viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="17" cy="17" r="13"/><path d="M17 9v8l5 3"/></svg><div><b>A Bergamo dal 1975</b><span>Oltre cinquant'anni di auto, noleggio e officina.</span></div></li>
       <li class="rv"><svg viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 23.5v-5.5l3.6-7.6A2.5 2.5 0 0 1 8.9 9h16.2a2.5 2.5 0 0 1 2.3 1.4L31 18v5.5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M3.5 18h27"/><circle cx="9.5" cy="24.5" r="3.2"/><circle cx="24.5" cy="24.5" r="3.2"/><path d="M13 13.5h8"/></svg><div><b>Oltre 100 mezzi a noleggio</b><span>Auto di ogni fascia, furgoni e pulmini da 9 posti.</span></div></li>
       <li class="rv"><svg viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M17 4l3.9 8 8.6 1.2-6.3 6 1.5 8.6L17 23.7l-7.7 4.1 1.5-8.6-6.3-6L13.1 12z"/></svg><div><b>4,8 su Google</b><span>Da 89 recensioni: «operatori seri e disponibili, prezzi buoni».</span></div></li>
     </ul>
@@ -389,7 +391,7 @@ form.modulo{background:var(--carta);color:var(--ink);border-radius:8px;padding:c
   <div class="wrap">
     <p class="occhiello rv">Noleggio</p>
     <h2 id="t-nol" class="rv">Il mezzo giusto, <em>per il tempo che serve</em>.</h2>
-    <p class="intro rv">Scegliete per quanto tempo vi serve e il tipo di mezzo: vi prepariamo la richiesta di disponibilità da mandarci via email.</p>
+    <p class="intro rv">Scegliete per quanto tempo vi serve e il tipo di mezzo: risponderemo alla vostra richiesta.</p>
     <div class="durate rv" role="group" aria-label="Durata del noleggio">
       <button type="button" aria-pressed="true" data-durata="A giornata">A giornata</button>
       <button type="button" aria-pressed="false" data-durata="A settimana">A settimana</button>
@@ -398,7 +400,7 @@ form.modulo{background:var(--carta);color:var(--ink);border-radius:8px;padding:c
     <p class="durate-n rv" id="durata-n" aria-live="polite">Per un trasloco, una gita, l'auto in officina o un imprevisto.</p>
     <div class="mezzi">
       <article class="mezzo rv">
-        <figure><img src="https://images.unsplash.com/photo-1766524791677-6c6c495e0218?auto=format&fit=crop&w=900&q=70" alt="Auto parcheggiate in fila" loading="lazy" width="900" height="563"><span class="num">oltre 100</span></figure>
+        <figure><img src="img/salone.jpg" alt="Auto nel salone S.G.A." loading="lazy" width="900" height="563"><span class="num">oltre 100</span></figure>
         <div class="corpo">
           <h3>Auto</h3>
           <p>Di ogni fascia: dall'utilitaria per la città alla station wagon per le vacanze.</p>
@@ -416,7 +418,7 @@ form.modulo{background:var(--carta);color:var(--ink);border-radius:8px;padding:c
         </div>
       </article>
       <article class="mezzo rv">
-        <figure><img src="https://images.unsplash.com/photo-1535655685871-dc8158ff167e?auto=format&fit=crop&w=900&q=70" alt="Pulmino bianco parcheggiato al tramonto" loading="lazy" width="900" height="563"><span class="num">9 posti</span></figure>
+        <figure><img src="img/pulmino.jpg" alt="Pulmino 9 posti a noleggio" loading="lazy" width="900" height="563"><span class="num">9 posti</span></figure>
         <div class="corpo">
           <h3>Pulmini 9 posti</h3>
           <p>Per squadre, gruppi di amici, matrimoni e trasferte di lavoro: tutti nello stesso mezzo.</p>
@@ -455,7 +457,7 @@ form.modulo{background:var(--carta);color:var(--ink);border-radius:8px;padding:c
             <ol><li>che tipo di auto vi serve (utilitaria, familiare, SUV…)</li><li>il budget, anche indicativo</li><li>se avete un'auto da dare in permuta</li></ol>
             <a href="#richiesta" data-tipo="Auto usata">Cerca un'auto con noi →</a></div>
         </div>
-        <figure class="media"><img src="https://images.unsplash.com/photo-1787213249224-d878e135179f?auto=format&fit=crop&w=1000&q=70" alt="Auto usate nel piazzale di un autosalone" loading="lazy" width="1000" height="1250"></figure>
+        <figure class="media"><img src="img/chiavi.jpg" alt="Chiavi delle auto con il logo S.G.A." loading="lazy" width="1000" height="1250"></figure>
       </div>
     </div>
 
@@ -520,7 +522,7 @@ form.modulo{background:var(--carta);color:var(--ink);border-radius:8px;padding:c
     <div>
       <p class="occhiello rv">Gomme</p>
       <h2 id="t-gom" class="rv">Il cambio gomme, <em>al momento giusto</em>.</h2>
-      <p class="intro rv">In Lombardia, come nel resto d'Italia, sulle strade con l'obbligo le gomme invernali (o le catene a bordo) servono dal 15 novembre al 15 aprile. Il cambio si può fare un mese prima e un mese dopo.</p>
+      <p class="intro rv">In Lombardia, come nel resto d'Italia, dal <b>15 novembre al 15 aprile</b> scatta l'obbligo di circolare con pneumatici invernali montati o catene da neve a bordo sulle strade segnalate. Per effettuare il cambio stagionale è prevista una finestra di tolleranza: si possono montare a partire da un mese prima (15 ottobre) e smontare fino a un mese dopo (15 maggio).</p>
     </div>
     <div class="stagione rv" id="stagione">
       <small id="stag-o">Oggi</small>
@@ -539,7 +541,7 @@ form.modulo{background:var(--carta);color:var(--ink);border-radius:8px;padding:c
     <div>
       <p class="occhiello rv">Chi siamo</p>
       <h2 id="t-sto" class="rv">Dal 1975, <em>sempre qui</em>.</h2>
-      <p class="testo rv">S.G.A. è un'azienda di Bergamo nata nel 1975. Il titolare è Adriano. Insieme ai meccanici dell'officina seguiamo i clienti dall'acquisto dell'auto al noleggio, fino ai tagliandi e al cambio gomme.</p>
+      <p class="testo rv">Dal 1975 a Bergamo, <b>S.G.A.</b> è il punto di riferimento per chi cerca un servizio affidabile, trasparente e completo nel mondo dell'auto. Che tu stia cercando la tua prossima auto da <b>acquistare</b>, una formula flessibile di <b>noleggio</b> o un'assistenza rapida per <b>tagliandi</b> e <b>cambio gomme</b>, da noi trovi sempre risposte chiare e soluzioni concrete.</p>
       <p class="testo rv">Salone, officina, deposito gomme e parco noleggio sono nello stesso posto, in via Fratelli Bandiera: lasci l'auto in officina e riparti con un mezzo sostitutivo a prezzo ridotto.</p>
       <div class="numeri rv">
         <div><b>1975</b><span>l'anno in cui abbiamo iniziato</span></div>
@@ -547,7 +549,7 @@ form.modulo{background:var(--carta);color:var(--ink);border-radius:8px;padding:c
         <div><b>4,8</b><span>su Google, 89 recensioni</span></div>
       </div>
     </div>
-    <figure class="rv"><img src="https://images.unsplash.com/photo-1643700973089-baa86a1ab9ee?auto=format&fit=crop&w=1000&q=70" alt="Meccanico al lavoro sotto un'auto in officina" loading="lazy" width="1000" height="1250"></figure>
+    <figure class="rv"><img src="img/officina.jpg" alt="L'officina S.G.A." loading="lazy" width="1000" height="1250"></figure>
   </div>
 </section>
 
@@ -556,13 +558,13 @@ form.modulo{background:var(--carta);color:var(--ink);border-radius:8px;padding:c
     <p class="occhiello rv">Foto</p>
     <h2 id="t-gal" class="rv">Il salone, l'officina, <em>i mezzi</em>.</h2>
     <div class="galleria">
-      <figure class="rv"><img src="https://images.unsplash.com/photo-1767681092416-bccf9410bda4?auto=format&fit=crop&w=1200&q=70" alt="Officina con auto sui ponti sollevatori" loading="lazy" width="1200" height="900"><figcaption>L'officina</figcaption></figure>
-      <figure class="rv"><img src="https://images.unsplash.com/photo-1535655685871-dc8158ff167e?auto=format&fit=crop&w=600&q=70" alt="Pulmino da 9 posti" loading="lazy" width="600" height="600"><figcaption>Pulmino 9 posti</figcaption></figure>
-      <figure class="rv"><img src="https://images.unsplash.com/photo-1792793182756-de1abcba6d70?auto=format&fit=crop&w=600&q=70" alt="Pneumatici impilati accanto all'equilibratrice" loading="lazy" width="600" height="600"><figcaption>Deposito gomme</figcaption></figure>
-      <figure class="rv"><img src="https://images.unsplash.com/photo-1625047509248-ec889cbff17f?auto=format&fit=crop&w=600&q=70" alt="Meccanico che controlla il motore" loading="lazy" width="600" height="600"><figcaption>Controllo motore</figcaption></figure>
+      <figure class="rv"><img src="img/salone.jpg" alt="Il salone S.G.A." loading="lazy" width="1200" height="900"><figcaption>Il salone</figcaption></figure>
+      <figure class="rv"><img src="img/pulmino.jpg" alt="Pulmino da 9 posti" loading="lazy" width="600" height="600"><figcaption>Pulmino 9 posti</figcaption></figure>
+      <figure class="rv"><img src="img/gomme.jpg" alt="Il deposito gomme S.G.A." loading="lazy" width="600" height="600"><figcaption>Deposito gomme</figcaption></figure>
+      <figure class="rv"><img src="img/meccanico.jpg" alt="Meccanico al lavoro sotto un'auto" loading="lazy" width="600" height="600"><figcaption>In officina</figcaption></figure>
       <figure class="rv"><img src="https://images.unsplash.com/photo-1587813369290-091c9d432daf?auto=format&fit=crop&w=600&q=70" alt="Furgoni a noleggio in fila" loading="lazy" width="600" height="600"><figcaption>Furgoni a noleggio</figcaption></figure>
     </div>
-    <p class="nota">Foto di esempio: nel sito definitivo mettiamo le foto del vostro piazzale, dell'officina e dei vostri mezzi.</p>
+    <p class="nota">Alcune foto sono ancora di esempio: le sostituiamo con le vostre quando sono pronte.</p>
   </div>
 </section>
 
